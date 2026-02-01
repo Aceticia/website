@@ -1,0 +1,114 @@
+/* ===== CUSTOM THEME FOR CHRIS LIU ===== */
+/* A modern academic feel with a neuroscience-inspired teal accent */
+
+/* ===== ACCENT COLOR ===== */
+:root {
+    --accent: #e07a5f;
+    /* Coral - warm, inviting */
+    --accent-hover: #c96a52;
+    /* Darker coral for hover */
+    --accent-light: #fce8e4;
+    /* Light coral for backgrounds */
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* Post titles */
+.post-title:hover {
+    color: var(--accent);
+}
+
+/* Profile buttons */
+.button {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #ffffff !important;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: var(--accent-hover) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Body text - clean minimal */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Headings - modern minimal */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.profile .profile_inner h1,
+.archive-month,
+header .logo a {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+}
+
+/* Navigation */
+#menu a {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+/* Code blocks */
+code,
+pre {
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+}
+
+/* ===== SUBTLE ENHANCEMENTS ===== */
+
+/* Smooth transitions everywhere */
+*,
+*::before,
+*::after {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Profile image subtle shadow */
+.profile_inner img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile_inner img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Post entries - subtle hover effect */
+.post-entry {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Social icons color on hover */
+.social-icons a:hover svg {
+    fill: var(--accent);
+}
