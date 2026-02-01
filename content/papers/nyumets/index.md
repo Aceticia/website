@@ -1,8 +1,7 @@
 ---
-title: "Longitudinal deep neural networks for
-assessing metastatic brain cancer on a large open benchmarks" 
+title: "Longitudinal deep neural networks for assessing metastatic brain cancer on a large open benchmark" 
 date: 2024-09-06
-tags: ["Medical Imaging", "Deep Learning", "Machine Learning", "Computer Vision"]
+tags: ["Medical Imaging", "Deep Learning", "Medical AI"]
 author: ["Katherine E. Link", "Zane Schnurman", "Xujin Chris Liu", "Young Joon Fred Kwon", "Lavender Yao Jiang", "Mustafa Nasir-Moin", "Sean Neifert", "Juan Diego Alzate", "Kenneth Bernstein", "Tanxia Qu", "Viola Chen", "Eunice Yang", "John G. Golfinos", "Daniel Orringer", "Douglas Kondziolka", "Eric Karl Oermann"]
 description: "We present NYUMets-Brain, the world’s largest, longitudinal, real-world dataset of cancer consisting of the imaging, clinical follow-up, and medical management of 1,429 patients. Using this dataset we developed Segmentation-Through-Time, a deep neural network which explicitly utilizes the longitudinal structure of the data and obtained state-of-the-art results at small (<10 mm3) metastases detection and segmentation." 
 summary: "We present NYUMets-Brain, the world’s largest, longitudinal, real-world dataset of cancer consisting of the imaging, clinical follow-up, and medical management of 1,429 patients. Using this dataset we developed Segmentation-Through-Time, a deep neural network which explicitly utilizes the longitudinal structure of the data and obtained state-of-the-art results at small (<10 mm3) metastases detection and segmentation." 

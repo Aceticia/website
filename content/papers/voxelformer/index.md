@@ -1,7 +1,7 @@
 ---
 title: "VoxelFormer: Parameter-Efficient Multi-Subject Visual Decoding from fMRI" 
 date: 2025-09-25
-tags: ["fMRI", "Visual Decoding", "Transformer", "Machine Learning"]
+tags: ["fMRI", "Deep Learning", "Neuroscience"]
 author: ["Chenqian Le", "Yilin Zhao", "Nikasadat Emami", "Kushagra Yadav", "Xujin Chris Liu", "Xupeng Chen", "Yao Wang"]
 description: "VoxelFormer is a lightweight transformer architecture that enables multi-subject training for visual decoding from fMRI."
 summary: "VoxelFormer is a lightweight transformer architecture that enables multi-subject training for visual decoding from fMRI."

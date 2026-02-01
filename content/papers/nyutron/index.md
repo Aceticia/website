@@ -1,7 +1,7 @@
 ---
 title: "Health system-scale language models are all-purpose prediction engines" 
 date: 2023-10-18
-tags: ["Large Language Models", "Natural Language Processing", "Machine Learning", "Clinical Decision Support"]
+tags: ["Clinical NLP", "Language Models", "Medical AI"]
 author: ["Lavender Yao Jiang", "Xujin Chris Liu", "...", "Eric Karl Oermann"]
 description: "We trained a large language model for medical language (NYUTron) and subsequently fine-tuned it across a wide range of clinical and operational predictive tasks, and found that it outperforms traditional models while being much easier to deploy."
 summary: "We trained a large language model for medical language (NYUTron) and subsequently fine-tuned it across a wide range of clinical and operational predictive tasks, and found that it outperforms traditional models while being much easier to deploy."

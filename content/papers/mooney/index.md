@@ -1,7 +1,7 @@
 ---
 title: "Neural and Computational Mechanisms Underlying One-shot Perceptual Learning in Humans" 
 date: 2025-05-09
-tags: ["Perceptual Learning", "Neuroscience", "Machine Learning", "Computer Vision"]
+tags: ["Neuroscience", "Computer Vision", "Deep Learning"]
 author: ["Xujin Chris Liu", "Ayaka Hachisuka", "Jonathan D. Shor", "Daniel Friedman", "Patricia Dugan", "Ignacio Saez", "Fedor E. Panov", "Yao Wang", "Werner Doyle", "Orrin Devinsky", "Eric K. Oermann", "Biyu J. He"]
 description: "In this paper, we investigate the neural and computational mechanisms underlying one-shot perceptual learning in humans. By introducing a novel top-down feedback mechanism into a vision transformer and comparing its representations with fMRI data, we find high level visual cortex as the most likely neural substrate wherein neural plasticity supports one-shot perceptual learning." 
 summary: "In this paper, we investigate the neural and computational mechanisms underlying one-shot perceptual learning in humans. By introducing a novel top-down feedback mechanism into a vision transformer and comparing its representations with fMRI data, we find high level visual cortex as the most likely neural substrate wherein neural plasticity supports one-shot perceptual learning." 

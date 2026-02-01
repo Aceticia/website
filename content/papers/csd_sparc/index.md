@@ -1,7 +1,7 @@
 ---
 title: "Automated, Scalable and Generalizable Deep Learning for Tracking Cortical Spreading Depression Using EEG" 
 date: 2021-05-04
-tags: ["Clinical neuroscience", "Machine Learning", "EEG", "Graph Neural Networks"]
+tags: ["EEG", "Deep Learning", "Medical AI"]
 author: ["Xujin Liu", "Alireza Chamanzar", "Lavender Y. Jiang", "Kimon A. Vogt", "Jose M. F. Moura", "Pulkit Grover"]
 description: "We present a graph neural network that is able to track cortical spreading depressions in scalp EEG signals. We show that our model is scalable to different densities of EEG and generalizable to different head models."
 summary: "We present a graph neural network that is able to track cortical spreading depressions in scalp EEG signals. We show that our model is scalable to different densities of EEG and generalizable to different head models."
