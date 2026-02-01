@@ -24,6 +24,9 @@ editPost:
 
 The ability to quickly learn and generalize is one of the brain’s most impressive feats and recreating it remains a major challenge for modern artificial intelligence research. One of the most mysterious one-shot learning abilities displayed by humans is one-shot perceptual learning, whereby a single viewing experience drastically alters visual perception in a long-lasting manner. Where in the brain one-shot perceptual learning occurs and what mechanisms support it remain enigmatic. Combining psychophysics, 7T fMRI, and intracranial recordings, we identify high-level visual cortex as the most likely neural substrate wherein neural plasticity supports one-shot perceptual learning. We further develop a novel deep neural network model incorporating top-down feedback into a vision transformer, which recapitulates and predicts human behavior. The prior knowledge learnt by this model is highly similar to the neural code in the human high-level visual cortex. These results reveal the neurocomputational mechanisms underlying one-shot perceptual learning in humans.
 
+##### My role in the project
+I designed and built a neuro-inspired vision transformer model with top-down feedback and compared its representations with fMRI data, and its behavior with human behavior.
+
 ---
 
 ##### Citation
