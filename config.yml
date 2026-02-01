@@ -18,6 +18,9 @@ menu:
     - name: Blog
       url: blogs/
       weight: 6
+    - name: This and That
+      url: this_and_that/
+      weight: 8
 
 params:
   description: "This website hosts Chris Liu's research papers, blogs, CV, and contact information."
@@ -57,6 +60,8 @@ params:
         url: archive/
       - name: Blog
         url: blogs/
+      - name: This and That
+        url: this_and_that/
 
   socialIcons:
     - name: CV
