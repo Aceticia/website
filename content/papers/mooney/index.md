@@ -10,13 +10,13 @@ cover:
     alt: "Neural and Computational Mechanisms Underlying One-shot Perceptual Learning in Humans"
     relative: true
 editPost:
-    URL: "https://www.biorxiv.org/content/10.1101/2025.05.09.635727v1"
-    Text: "bioRxiv"
+    URL: "https://www.nature.com/articles/s41467-026-68711-x"
+    Text: "Nature Communications"
 
 ---
 
 ##### Links
-+ [Preprint](https://www.biorxiv.org/content/10.1101/2025.05.09.635727v1)
++ [Link](https://www.nature.com/articles/s41467-026-68711-x)
 + [Code](https://github.com/nyuolab/MooneyComputationModeling2024.git)
 + [Data](https://osf.io/xphte/overview?view_only=a92e4c5530474289a613105380041b3c)
 
@@ -30,18 +30,24 @@ I designed and built a neuro-inspired vision transformer model with top-down fee
 ---
 
 ##### Citation
-(To appear in Nature Communications)
-
 ```latex
-@article {Hachisuka2025.05.09.635727,
-	author = {Hachisuka, Ayaka and Shor, Jonathan D. and Liu, Xujin Chris and Friedman, Daniel and Dugan, Patricia and Saez, Ignacio and Panov, Fedor E. and Wang, Yao and Doyle, Werner and Devinsky, Orrin and Oermann, Eric K. and He, Biyu J.},
-	title = {Neural and Computational Mechanisms Underlying One-shot Perceptual Learning in Humans},
-	elocation-id = {2025.05.09.635727},
-	year = {2025},
-	doi = {10.1101/2025.05.09.635727},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2025/05/09/2025.05.09.635727},
-	eprint = {https://www.biorxiv.org/content/early/2025/05/09/2025.05.09.635727.full.pdf},
-	journal = {bioRxiv}
+@ARTICLE{Hachisuka2026-av,
+  title     = "Neural and computational mechanisms underlying one-shot
+               perceptual learning in humans",
+  author    = "Hachisuka, Ayaka and Shor, Jonathan D and Liu, Xujin Chris and
+               Friedman, Daniel and Dugan, Patricia and Saez, Ignacio and Panov,
+               Fedor E and Wang, Yao and Doyle, Werner and Devinsky, Orrin and
+               Oermann, Eric K and He, Biyu J",
+  journal   = "Nature Communications",
+  publisher = "Nature Publishing Group",
+  volume    =  17,
+  number    =  1,
+  pages     =  1204,
+  month     =  feb,
+  year      =  2026,
+  doi       = "10.1038/s41467-026-68711-x",
+  issn      = "2041-1723,2041-1723",
+  language  = "en"
 }
+
 ```
