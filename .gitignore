@@ -3,3 +3,11 @@ public/
 resources/
 .hugo_build.lock
 .DS_Store
+
+# Latex
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz

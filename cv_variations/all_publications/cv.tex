@@ -1,0 +1,218 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Colors
+\definecolor{linkblue}{HTML}{0645AD}
+
+% Hyperref setup
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  urlcolor=linkblue,
+  citecolor=linkblue
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{6pt}{4pt}
+
+% No page numbers on first page
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+% Custom commands
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\LARGE\bfseries Xujin ``Chris'' Liu} \\[4pt]
+  New York City, NY 10016 \\[2pt]
+  \href{https://chris.earth}{chris.earth} \\[2pt]
+  \href{https://scholar.google.com/citations?user=ZY-JsPoAAAAJ}{Google Scholar} \quad $\vert$ \quad
+  \href{https://github.com/aceticia}{GitHub} \quad $\vert$ \quad
+  \href{https://www.linkedin.com/in/xujin-chris-liu-6a050616b/}{LinkedIn}
+\end{center}
+
+% ============================================================================
+\section{Education}
+% ============================================================================
+
+\cventry{New York University}{New York, NY}{Ph.D.\ Candidate, Electrical and Computer Engineering; GPA: 3.8/4.0}{Sept 2021 -- Present}
+
+\vspace{8pt}
+
+\cventry{Carnegie Mellon University}{Pittsburgh, PA}{B.S., Electrical and Computer Engineering; Additional Major: Biomedical Engineering; GPA: 3.7/4.0}{July 2017 -- May 2021}
+
+% ============================================================================
+\section{Publications}
+% ============================================================================
+
+\vspace{4pt}
+\noindent\textit{$^\dagger$ indicates equal contribution. Author name \underline{underlined} where I appear.}
+
+\vspace{6pt}
+
+% ---------- Journal Articles ----------
+\subsection*{Journal Articles}
+
+\begin{enumerate}[leftmargin=*, label={[\arabic*]}, itemsep=6pt]
+
+  \item \underline{Xujin Chris Liu}, Ayaka Hachisuka, Jonathan D.\ Shor, Daniel Friedman, Patricia Dugan, Ignacio Saez, Fedor E.\ Panov, Yao Wang, Werner Doyle, Orrin Devinsky, Eric K.\ Oermann, and Biyu J.\ He.
+    ``Neural and computational mechanisms underlying one-shot perceptual learning in humans.''
+    \textit{Nature Communications}, 17(1):1204, 2026. \\
+    \href{https://doi.org/10.1038/s41467-026-68711-x}{DOI: 10.1038/s41467-026-68711-x} \hfill \textbf{Citations: 2}
+
+  \item Katherine E.\ Link, Zane Schnurman, \underline{Xujin Chris Liu}, Young Joon Fred Kwon, Lavender Yao Jiang, Mustafa Nasir-Moin, Sean Neifert, Juan Diego Alzate, Kenneth Bernstein, Tanxia Qu, Viola Chen, Eunice Yang, John G.\ Golfinos, Daniel Orringer, Douglas Kondziolka, and Eric Karl Oermann.
+    ``Longitudinal deep neural networks for assessing metastatic brain cancer on a large open benchmark.''
+    \textit{Nature Communications}, 15(1):8170, 2024. \\
+    \href{https://doi.org/10.1038/s41467-024-52414-2}{DOI: 10.1038/s41467-024-52414-2} \hfill \textbf{Citations: 22}
+
+  \item Lavender Yao Jiang, \underline{Xujin Chris Liu}, Nima Pour Nejatian, Mustafa Nasir-Moin, Duo Wang, Anas Abidin, Kevin Eaton, Howard Antony Riina, Ilya Laufer, Paawan Punjabi, Madeline Miceli, Nora C.\ Kim, Cordelia Orillac, Zane Schnurman, Christopher Livia, Hannah Weiss, David Kurland, Sean Neifert, Yosef Dastagirzada, Douglas Kondziolka, Alexander T.\ M.\ Cheung, Grace Yang, Ming Cao, Mona Flores, Anthony B.\ Costa, Yindalon Aphinyanaphongs, Kyunghyun Cho, and Eric Karl Oermann.
+    ``Health system-scale language models are all-purpose prediction engines.''
+    \textit{Nature}, 2023. \\
+    \href{https://doi.org/10.1038/s41586-023-06160-y}{DOI: 10.1038/s41586-023-06160-y} \hfill \textbf{Citations: 425}
+
+\end{enumerate}
+
+% ---------- Conference Papers ----------
+\subsection*{Peer-Reviewed Conference Papers}
+
+\begin{enumerate}[leftmargin=*, label={[\arabic*]}, itemsep=6pt, resume]
+
+  \item Junyi Yao, Parham Eftekhar, Gene Cheung, \underline{Xujin Chris Liu}, Yao Wang, and Wei Hu.
+    ``Lightweight Transformer for EEG Classification via Balanced Signed Graph Algorithm Unrolling.''
+    \textit{The Fourteenth International Conference on Learning Representations (ICLR)}, 2025.\\
+    \href{https://openreview.net/forum?id=zxsLio384j}{OpenReview}
+
+  \item Chenqian Le, Yilin Zhao, Nikasadat Emami, Kushagra Yadav, \underline{Xujin Chris Liu}, Xupeng Chen, and Yao Wang.
+    ``VoxelFormer: Parameter-Efficient Multi-Subject Visual Decoding from fMRI.''
+    \textit{IEEE/EMBS International Conference on Neural Engineering (NER)}, Spotlight Poster, 2025. \\
+    \href{https://arxiv.org/abs/2509.09015}{arXiv: 2509.09015} \hfill \textbf{Citations: 0}
+
+  \item \underline{Xujin Liu}, Alireza Chamanzar, Lavender Y.\ Jiang, Kimon A.\ Vogt, Jos\'{e} M.\ F.\ Moura, and Pulkit Grover.
+    ``Automated, Scalable and Generalizable Deep Learning for Tracking Cortical Spreading Depression Using EEG.''
+    \textit{10th International IEEE/EMBS Conference on Neural Engineering (NER)}, pp.\ 416--419, 2021. \\
+    \href{https://doi.org/10.1109/NER49283.2021.9441333}{DOI: 10.1109/NER49283.2021.9441333} \hfill \textbf{Citations: 5}
+
+  \item Zihao Yang, Chenkang Zhang, Muru Wu, \underline{Xujin Chris Liu}, Lavender Yao Jiang, Kyunghyun Cho, and Eric Karl Oermann.
+    ``Intriguing Effect of the Correlation Prior on ICD-9 Code Assignment.''
+    \textit{ACL Student Research Workshop}, 2023. \\
+    \href{https://doi.org/10.18653/v1/2023.acl-srw.19}{DOI: 10.18653/v1/2023.acl-srw.19} \hfill \textbf{Citations: 2}
+
+\end{enumerate}
+
+% ---------- Preprints & Under Review ----------
+\subsection*{Preprints \& Under Review}
+
+\begin{enumerate}[leftmargin=*, label={[\arabic*]}, itemsep=6pt, resume]
+
+  \item \underline{Xujin Chris Liu}, Yao Wang, and Eric Karl Oermann.
+    ``Dissecting EEG-Language Models: Token Granularity, Model Size, and Cross-Site Generalization.''
+    Under review at \textit{ICML 2026}.
+
+  \item Lavender Yao Jiang, \underline{Xujin Chris Liu}, Kyunghyun Cho, and Eric Karl Oermann.
+    ``Paradox of De-identification: A Critique of HIPAA Safe Harbour in the Age of LLMs.''
+    \textit{arXiv preprint}, arXiv:2602.08997, 2026. \\
+    \href{https://arxiv.org/abs/2602.08997}{arXiv: 2602.08997} \hfill \textbf{Citations: 0}
+
+  \item Lavender Yao Jiang, Angelica Chen, Xu Han, \underline{Xujin Chris Liu}, Radhika Dua, Kevin Eaton, Francesca Wolff, Robert Steele, Jeff Zhang, Alexander Alyakin, Qingkai Pan, Yanbing Chen, Kyungmin Sangwon, David Alber, Jaden Stryker, Jin Vivian Lee, Yindalon Aphinyanaphongs, Kyunghyun Cho, and Eric Karl Oermann.
+    ``Generalist Foundation Models Are Not Clinical Enough for Hospital Operations.''
+    \textit{arXiv preprint}, arXiv:2511.13703, 2025. \\
+    \href{https://arxiv.org/abs/2511.13703}{arXiv: 2511.13703} \hfill \textbf{Citations: 2}
+
+\end{enumerate}
+
+% ---------- Workshop Papers & Posters ----------
+\subsection*{Workshop Papers \& Posters}
+
+\begin{enumerate}[leftmargin=*, label={[\arabic*]}, itemsep=6pt, resume]
+
+  \item Grace Yang, Mingzi Cao, Lavender Yao Jiang, \underline{Xujin Chris Liu}, Alexander T.\ M.\ Cheung, Hannah Weiss, David Kurland, Kyunghyun Cho, and Eric Karl Oermann.
+    ``Language Model Classifier Aligns Better with Physician Word Sensitivity than XGBoost on Readmission Prediction.''
+    \textit{NeurIPS ML4H Workshop}, 2022. \\
+    \href{https://arxiv.org/abs/2211.07047}{arXiv: 2211.07047} \hfill \textbf{Citations: 4}
+
+\end{enumerate}
+
+% ============================================================================
+\section{Selected Projects}
+% ============================================================================
+
+\vspace{4pt}
+
+\cventry{Scaling EEG Language Models for Seizure Detection}{New York, NY}{Empirical scaling law}{2024}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]
+  \item First systematic study of how tokenization granularity interacts with language model size (0.6B--4B); found scaling tokenization granularity is more reliable for cross-site generalization than scaling model size.
+\end{itemize}
+
+\vspace{4pt}
+
+\cventry{BEEG Pretraining Dataset \& BEEG Bench}{New York, NY}{Dataset / Pipeline Engineering}{2024 -- Present}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]
+  \item Collected, preprocessed, and unified EEG, iEEG, MEG datasets into the largest corpus for large-scale electrophysiology pretraining.
+\end{itemize}
+
+\vspace{4pt}
+
+\cventry{Routine EEG Foundation Model for Epilepsy Diagnosis}{New York, NY}{Self-supervised pretraining}{2024}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]
+  \item Pretrained electrode-agnostic model via masked autoencoding; found epileptic representations exhibit higher intrinsic dimension. CNS 2025 poster, selected as oral presentation.
+\end{itemize}
+
+% ============================================================================
+\section{Open Source}
+% ============================================================================
+
+\vspace{4pt}
+
+\cventry{x-Transformers (lucidrains/x-transformers)}{Remote}{Contributor}{2024}
+\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]
+  \item Contributed bug fixes related to positional encoding and masking in a widely-used Transformer implementation.
+\end{itemize}
+
+% ============================================================================
+\section{Skills}
+% ============================================================================
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+  \item \textbf{Programming Languages:} Python, C, MATLAB
+  \item \textbf{ML / Software \& Tools:} PyTorch, \LaTeX
+  \item \textbf{Domains:} EEG/iEEG/MEG, fMRI, clinical notes, medical imaging
+\end{itemize}
+
+% ============================================================================
+\section{Coursework}
+% ============================================================================
+
+\vspace{4pt}
+
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+  \item \textbf{Signal Processing:} Signal Processing; Image \& Video Processing; Medical Imaging; Neural \& Physiological Signal Processing
+  \item \textbf{Stats \& Probability:} Stochastic Processes; Detection and Estimation Theory
+  \item \textbf{Optimization:} System Optimization Method
+  \item \textbf{Psychology/Neuroscience:} Categories and Concepts; Sensation and Perception
+\end{itemize}
+
+\end{document}
