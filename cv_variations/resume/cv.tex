@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Xujin ``Chris'' Liu} & Email : \href{mailto:chris.liu@nyu.edu}{chris.liu@nyu.edu}\\
+  New York City, NY (10016) & Website : \href{https://chris.earth}{chris.earth} \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item\small{
+      PhD candidate in Electrical \& Computer Engineering (computational neuroscience) with a research-engineering focus: building scalable datasets, preprocessing pipelines, and self-supervised pretraining workflows for neurophysiology (EEG/iEEG/MEG) and clinical prediction. Publications in \textit{Nature} and \textit{Nature Communications}; experience with large-project debugging and training infrastructure.
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{New York, NY}
+      {Ph.D. Candidate, Electrical and Computer Engineering; GPA: 3.8/4.0}{Sept 2021 -- Present}
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {B.S., Electrical and Computer Engineering; Additional Major: Biomedical Engineering; GPA: 3.7/4.0}{July 2017 -- May 2021}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Selected Projects (Research Engineering \& ML)}
+  \resumeSubHeadingListStart
+    
+    % 1) Data / pipelines first (most RE-coded)
+
+    \resumeSubheading
+      {Scaling EEG language models for seizure detection}{New York, NY}
+      {Empirical scaling law}{2024}
+      \resumeItemListStart
+      \resumeItem{Scaling law of EEG-language models}
+      {First systematic study of how tokenization granularity (duration per token) interact with language model size (0.6B-4B) and find that scaling tokenization granularity is more reliable for improving cross-site generalization compared to scaling model size.}
+    \resumeItem{Representation analysis}
+      {Despite flattening 2D signal into 1D, permutation invariance is still displayed in model representation.}
+        \resumeItem{Publication}{Manuscript under review at ICML 2026}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {BEEG Pretraining dataset \& BEEG Bench}{New York, NY}
+      {Dataset / Pipeline Engineering}{2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{BEEG: Unified neurophysiology corpus}
+          {Collected, preprocessed, and unified EEG, iEEG, MEG datasets from OpenNeuro and Harvard EEG dataset into a single corpus for large-scale electrophysiology pretraining; spans tasks including visual perception, speech, and in-context learning.}
+        \resumeItem{BEEGBench: Reproducible EEG, iEEG, MEG SFT dataset package}
+          {Lightweight framework for config-centric building of SFT datasets.}
+        \resumeItem{Publication}{Manuscript in preparation}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Localizing One-shot Visual Perceptual Learning in Humans}{New York, NY}
+      {Computational Neuroscience / Deep Learning}{2022 -- 2024}
+      \resumeItemListStart
+        \resumeItem{Top-down mechanism}
+          {Proposed a neuro-inspired top-down mechanism in a deep neural network model that rivals human learning ability; analysis suggests perceptual-learning information concentrates in fusiform cortex.}
+        \resumeItem{Publication}
+          {First-author paper published in \href{https://doi.org/10.1038/s41467-026-68711-x}{\textit{Nature Communications}}, 2026.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Routine EEG Foundation Model for Epilepsy Diagnosis}{New York, NY}
+      {Self-supervised pretraining}{2024}
+      \resumeItemListStart
+        \resumeItem{Electrode-agnostic representations}
+          {Used BEEG and masked autoencoding to pretrain an electrode-agnostic model; evaluated transfer to epilepsy prediction on unseen subjects.}
+        \resumeItem{Representation analysis}
+          {Found epileptic representations exhibit higher intrinsic dimension than normal EEG, supporting increased signal complexity under pathology.}
+\resumeItem{Publication}{\href{https://www.cns.org/poster-search?id=53025}{CNS 2025 poster}, selected as oral presentation}
+      \resumeItemListEnd
+
+    % 3) Large-scale training / infra story (high signal for RE)
+    \resumeSubheading
+      {Clinical NLP: Health-system Scale Language Models}{New York, NY}
+      {Pretraining Infrastructure / Clinical Prediction}{2022 -- 2023}
+      \resumeItemListStart
+        \resumeItem{Research infrastructure}
+          {Contributed debugging and infrastructure for pretraining large-scale clinical language models used for 30-day readmission prediction (\href{https://www.nature.com/articles/s41586-023-06160-y}{\textit{Nature}}, 2023).}
+        \resumeItem{Clinician-aligned sensitivity}
+          {Quantified that classifier decisions align better with physician word sensitivity than bag-of-words/XGBoost baselines; poster at NeurIPS ML4H Workshop 2022.}
+      \resumeItemListEnd
+
+    % 4) Another strong "real-world ML at scale" anchor
+    \resumeSubheading
+      {Longitudinal Deep Learning for Metastatic Brain Cancer}{New York, NY}
+      {Medical Imaging Benchmarking}{2022 -- 2023}
+      \resumeItemListStart
+        \resumeItem{Benchmark contribution} {Developed a massive open benchmark showing longitudinal information improves performance on small tumors. Paper published in \href{https://www.nature.com/articles/s41467-024-52414-2}{Nature communications}.}
+      \resumeItemListEnd
+
+    % 5) Older but solid modeling+robustness project
+    \resumeSubheading
+      {Automated Detection of Cortical Spreading Depression (CSD) from EEG}{New York, NY}
+      {Graph Neural Networks + CNNs}{2021 -- 2023}
+      \resumeItemListStart
+        \resumeItem{Modeling}
+          {Designed a novel architecture combining graph neural networks and convolutional neural networks to detect cortical spreading depressions from scalp EEG.}
+        \resumeItem{Deployment-minded robustness}
+          {Improves accuracy while enabling scalable deployment across different EEG sensor densities.}
+      \resumeItemListEnd
+
+    % 7) Mentored projects last (good signals, but de-emphasize)
+    \resumeSubheading
+      {VoxelFormer (Mentored Project)}{New York, NY}
+      {fMRI Decoding / Parameter-efficient Modeling}{2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Model}
+          {Proposed a subject-independent architecture using voxel-level token merging for multi-subject visual decoding from fMRI; poster at IEEE/EMBS NER 2025.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ICD-9 Code Assignment (Mentored Project)}{New York, NY}
+      {Clinical NLP / Imbalanced Learning}{2023}
+      \resumeItemListStart
+        \resumeItem{Method}
+          {Investigated correlation priors between labels and showed large impacts on imbalanced clinical code prediction; presented at ACL Student Research Workshop 2023.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE-----------------
+\section{Open Source}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {x-Transformers (lucidrains/x-transformers)}{Remote}
+      {Contributor}{2024}
+      \resumeItemListStart
+        \resumeItem{Bug fixes}
+          {Contributed fixes related to positional encoding and masking in a widely-used Transformer implementation.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------COURSEWORK-----------------
+\section{Coursework}
+  \resumeSubHeadingListStart
+    \item\small{
+      \textbf{Signal Processing}{: Signal Processing; Image \& Video Processing; Medical Imaging; Neural \& Physiological Signal Processing}
+    }
+    \item\small{
+      \textbf{Stats \& Probability}{: Stochastic Processes; Detection and Estimation Theory}
+    }
+    \item\small{
+      \textbf{Optimization}{: System Optimization Method}
+    }
+    \item\small{
+      \textbf{Psychology/Neuroscience}{: Categories and Concepts; Sensation and Perception}
+    }
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming Languages}{: Python, C, MATLAB}
+    }
+    \item{
+      \textbf{ML / Software \& Tools}{: PyTorch, LaTeX}
+    }
+    \item{
+      \textbf{Domains}{: EEG/iEEG/MEG, fMRI, clinical notes, medical imaging}
+    }
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
