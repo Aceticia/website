@@ -3,6 +3,8 @@ title: "Uh, I think there is a face trapped in this brain"
 date: 2026-02-01
 description: "A creepy face in a fMRI scan." 
 summary: "A creepy face in a fMRI scan." 
+tags: ["fMRI", "Fun"]
+aliases: ["/this_and_that/creepy_face/"]
 cover:
     image: "face.png"
     alt: "A creepy face in a fMRI scan."

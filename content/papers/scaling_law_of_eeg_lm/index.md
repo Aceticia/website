@@ -16,7 +16,7 @@ cover:
 ---
 
 ##### Links
-+ [Paper](./paper.pdf)
++ [Paper (preprint)](./paper.pdf)
 + [Code (Coming Soon)]()
 
 ##### Abstract
@@ -30,4 +30,12 @@ I proposed the project and fomulated the problem. I implemented the models, trai
 
 ##### Citation
 
-(Under Review at ICML 2026)
+```latex
+@misc{Liu2026-weaver,
+  title  = "Dissecting {EEG}-Language Models: Token Granularity, Model Size,
+            and Cross-Site Generalization",
+  author = "Liu, Xujin Chris and Wang, Yao and Oermann, Eric Karl",
+  year   =  2026,
+  note   = "Preprint"
+}
+```
